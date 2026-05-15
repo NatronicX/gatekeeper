@@ -1,3 +1,4 @@
+ARG BASE_IMG=scratch
 ARG HOMEDIR=/opt/gatekeeper
 
 #
@@ -37,7 +38,7 @@ RUN echo "gatekeeper:x:1000:gatekeeper" >> /etc/group && \
 # Actual image
 #
 
-FROM scratch
+FROM ${BASE_IMG}
 ARG HOMEDIR
 
 LABEL Name=gatekeeper \
