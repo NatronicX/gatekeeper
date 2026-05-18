@@ -1,3 +1,4 @@
+ARG BASE_IMG=scratch
 ARG HOMEDIR=/opt/gatekeeper
 
 #
